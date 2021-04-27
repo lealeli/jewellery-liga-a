@@ -8,10 +8,10 @@
   <link as="font" type="font/woff2" href="fonts/cormorant-garamond-400.woff2" rel="preload" crossorigin="">
   <link as="font" type="font/woff2" href="fonts/cormorant-garamond-400italic.woff2" rel="preload" crossorigin="">
   <link as="font" type="font/woff2" href="fonts/cormorant-garamond-500italic.woff2" rel="preload" crossorigin="">
-  <link as="font" type="font/woff" href="fonts/cormorant-garamond-700.woff2" rel="preload" crossorigin="">
-  <link as="font" type="font/woff" href="fonts/poppins-400.woff2" rel="preload" crossorigin="">
-  <link as="font" type="font/woff" href="fonts/poppins-500.woff2" rel="preload" crossorigin="">
-  <link as="font" type="font/woff" href="fonts/poppins-700.woff2" rel="preload" crossorigin="">
+  <link as="font" type="font/woff2" href="fonts/cormorant-garamond-700.woff2" rel="preload" crossorigin="">
+  <link as="font" type="font/woff2" href="fonts/poppins-400.woff2" rel="preload" crossorigin="">
+  <link as="font" type="font/woff2" href="fonts/poppins-500.woff2" rel="preload" crossorigin="">
+  <link as="font" type="font/woff2" href="fonts/poppins-700.woff2" rel="preload" crossorigin="">
   <link as="style" href="css/style.min.css" rel="preload">
   <link as="script" href="js/script.js" rel="preload">
 
@@ -20,6 +20,72 @@
 </head>
 <body class="page-body">
 <header class="page-header">
+  <div class="page-header__wrapper page-header__wrapper--nojs">
+    <a href="#" class="page-header__toggle page-header__toggle--nojs" type="button">
+      <svg width="25" height="18">
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-menu"></use>
+      </svg>
+      <span class="visually-hidden">Меню</span>
+    </a>
+    <div class="page-header__search">
+      <form action="#">
+        <input id="search" type="search" placeholder="Type here to search">
+        <label for="search">
+          <svg width="14" height="14">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-search"></use>
+          </svg>
+        </label>
+      </form>
+    </div>
+    <a class="page-header__logo">
+      <img alt="Chjewellery" src="img/logo.svg" width="66" height="66">
+    </a>
+    <div class="page-header__nav">
+      <a href="#" class="page-header__login">Login</a>
+      <a href="#" class="page-header__cart">
+        <svg width="18" height="16">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-cart"></use>
+        </svg>
+        <span class="page-header__cart-name">Cart</span> <span class="page-header__cart-sum">0</span>
+      </a>
+    </div>
+  </div>
+
+  <nav class="main-nav main-nav--nojs">
+    <div class="main-nav__wrapper">
+      <a class="main-nav__logo">
+        <img alt="Chjewellery" src="img/logo-white.svg" width="66" height="66">
+      </a>
+      <a href="#" class="main-nav__cart">
+        <svg width="18" height="16">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-cart"></use>
+        </svg>
+      </a>
+      <div class="main-nav__search">
+        <form action="">
+          <input id="search-menu" type="search">
+          <label for="search-menu">
+            <svg width="14" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-search"></use>
+            </svg>
+          </label>
+        </form>
+      </div>
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a class="main-nav__link" href="#" tabindex="0">What’s new</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#" tabindex="0">Chokers</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#" tabindex="0">Necklaces</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#" tabindex="0">Rings</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#" tabindex="0">Earrings</a></li>
+      </ul>
+      <ul class="main-nav__sublist main-nav__list--nojs">
+        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#" tabindex="0">About CH</a></li>
+        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#" tabindex="0">Stores & Hours</a></li>
+        <li class="main-nav__subitem"><a class="main-nav__sublink" href="#" tabindex="0">Contact Us</a></li>
+      </ul>
+      <a href="#" class="main-nav__login">Login</a>
+    </div>
+  </nav>
 </header>
 <main class="page-main">
 </main>

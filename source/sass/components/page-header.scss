@@ -1,0 +1,236 @@
+.page-header {
+  width: 100%;
+  position: relative;
+}
+
+.page-header__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 30px 0 30px;
+
+  @media (max-width: $mobile-width) {
+    padding: 9px 15px 0 15px;
+  }
+
+  &--nojs {
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
+
+.page-header__toggle svg {
+  @media (max-width: $tablet-width) {
+    fill: $basic-white;
+    stroke: $special-gray-dark;
+    stroke-width: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.page-header__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    display: block;
+    border: none;
+    width: 25px;
+    height: 18px;
+    top: 55px;
+    left: 45px;
+    fill: none;
+    stroke: $special-gray-dark;
+    background-color: $basic-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 37px;
+    left: 15px;
+  }
+
+  &--open svg {
+    display: none;
+
+    @media (max-width: $tablet-width) {
+      stroke: $basic-white;
+      position: absolute;
+      display: block;
+      width: 25px;
+      height: 18px;
+      fill: none;
+      top: 0;
+      left: 0;
+      z-index: 100;
+    }
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.page-header__logo {
+  width: 66px;
+  height: 66px;
+  padding: 22px 113px 0 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 21px 0 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 52px;
+    height: 52px;
+    padding: 11px 0 0 0;
+  }
+}
+
+.page-header__login {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-gray-dark;
+  padding-right: 32px;
+  text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    opacity: 0.6;
+  }
+}
+
+.page-header__cart {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-gray-dark;
+  text-decoration: none;
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/icon-cart.svg") center center no-repeat;
+    width: 20px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    top: 54px;
+    right: 45px;
+    stroke: $special-gray-dark;
+    fill: none;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 37px;
+    right: 15px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    text-decoration: underline;
+    opacity: 0.6;
+  }
+}
+
+.page-header__cart svg {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.page-header__cart-name {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__cart-sum {
+  padding-left: 3px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__search form {
+  position: relative;
+}
+
+.page-header__search input {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-gray-dark;
+  background-color: $basic-white;
+  border: none;
+  position: relative;
+  margin-left: 29px;
+  width: 200px;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+
+  &:hover {
+    border-bottom: 1px $special-gray-dark solid;
+  }
+
+  &:focus {
+    border-bottom: 1px $special-brown solid;
+    outline: none;
+  }
+}
+
+.page-header__search label {
+  position: absolute;
+  top: 3px;
+  left: -1px;
+  display: flex;
+  width: 14px;
+  height: 14px;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__search input::placeholder {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-gray-light;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
