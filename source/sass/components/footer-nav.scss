@@ -1,0 +1,33 @@
+.footer-nav {
+  width: 30%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    width: 80%;
+  }
+}
+
+.footer-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+}
+
+.footer-nav__item {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.footer-nav__link {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $basic-white;
+  text-decoration: none;
+}

@@ -1,0 +1,33 @@
+.social {
+  width: 10%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: $tablet-width) {
+    width: 20%;
+  }
+}
+
+.social__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.social__item {
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.social__link {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $basic-white;
+  text-decoration: none;
+}

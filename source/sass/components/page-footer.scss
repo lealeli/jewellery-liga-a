@@ -1,0 +1,96 @@
+.page-footer {
+  width: 100%;
+  background-color: $basic-black;
+}
+
+.page-footer__wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 100px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-footer__send-mail {
+  width: 40%;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.page-footer__header {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: $basic-white;
+}
+
+.page-footer__text {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: $special-gray-light;
+}
+
+.page-footer__input-mail {
+  max-width: 500px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.page-footer__input-mail label {
+  width: 100%;
+}
+
+.page-footer__input-mail input {
+  width: 100%;
+  background-color: $basic-black;
+  color: $basic-white;
+  border: none;
+  border-bottom: 1px solid $basic-white;
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.page-footer__input-mail input::placeholder {
+  width: 100%;
+  background-color: $basic-black;
+  border-bottom: 1px solid $basic-white;
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: $special-gray-light;
+}
+
+.page-footer__input-mail button {
+  background-color: $basic-black;
+  border: none;
+  color: $basic-white;
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.page-footer__input-mail svg {
+  width: 29px;
+  height: 9px;
+  transform: rotate(180deg);
+  stroke: $basic-white;
+}
