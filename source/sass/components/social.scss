@@ -1,12 +1,13 @@
 .social {
   width: 10%;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
   @media (max-width: $tablet-width) {
     width: 20%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
@@ -15,11 +16,19 @@
   margin: 0;
   padding: 0;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .social__item {
   margin-bottom: 30px;
   width: 100%;
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    margin: 0 15px 0 0;
+  }
 }
 
 .social__link {
@@ -30,4 +39,10 @@
   line-height: 130%;
   color: $basic-white;
   text-decoration: none;
+}
+
+.social__link span {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

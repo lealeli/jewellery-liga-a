@@ -8,6 +8,10 @@
   @media (max-width: $tablet-width) {
     width: 80%;
   }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .footer-nav__list {
@@ -15,6 +19,10 @@
   margin: 0;
   padding: 0;
   width: 50%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .footer-nav__item {
