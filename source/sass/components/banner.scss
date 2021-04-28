@@ -1,0 +1,45 @@
+.banner {
+  max-width: 1366px;
+  height: 463px;
+  margin: 0 auto;
+  background: url("../img/main-banner@1x.jpg") $special-brown center center no-repeat;
+  background-size: cover;
+  filter: drop-shadow(0 4px 4px $basic-black-transparency25);
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/main-banner@2x.png") $special-brown center center no-repeat;
+    background-size: cover;
+  }
+}
+
+.banner__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: $special-brown-transparency70;
+}
+
+.banner__wrapper h1 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  color: $basic-white;
+  margin: 0;
+}
+
+.banner__wrapper span {
+  font-family: $font-family-header;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 130%;
+  color: $basic-white;
+  margin: 0;
+}
