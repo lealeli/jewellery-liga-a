@@ -18,6 +18,7 @@
 
 .new-goods__item {
   width: calc(25% - 30px);
+  margin: 0 15px;
 
   @media (max-width: $tablet-width) {
     width: calc(50% - 30px);

@@ -1,0 +1,124 @@
+.blog {
+  width: 100%;
+}
+
+.blog__wrapper {
+  max-width: 1170px;
+  padding: 0 0 130px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog__wrapper h2 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  color: $special-gray-dark;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.blog__wrapper a {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $special-gray-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $special-brown;
+  margin-bottom: 60px;
+}
+
+.blog__list {
+  display: grid;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+  grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+  grid-template-rows: 300px 300px;
+  grid-auto-flow: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.blog__item {
+  width: 100%;
+  display: flex;
+}
+
+.blog__item:nth-child(3n) {
+  position: relative;
+  grid-row: 1 / span 2;
+  grid-column: 2 / span 1;
+}
+
+.blog__item img {
+  width: 285px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog__item:nth-child(3n-1) picture,
+.blog__item:nth-child(3n-1) img {
+  order: 2;
+}
+
+.blog__item:nth-child(3n) img {
+  width: 570px;
+  height: 630px;
+  object-fit: cover;
+}
+
+.blog__info {
+  width: 165px;
+  height: 158px;
+  background: $special-brown-middle;
+  text-align: center;
+  padding: 71px 60px;
+}
+
+.blog__item:nth-child(3n - 1) .blog__info {
+  order: 1;
+}
+
+.blog__item:nth-child(3n) .blog__info {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.blog__info p {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: $special-gray-light;
+}
+
+.blog__info h3 {
+  font-family: $font-family-header;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  color: $basic-black;
+}
+
+.blog__info a {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: $special-gray-dark;
+  text-decoration: none;
+  border-bottom: 1px solid $special-brown;
+  margin-bottom: 60px;
+}

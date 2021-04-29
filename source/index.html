@@ -15,6 +15,7 @@
   <link as="font" type="font/woff2" href="fonts/poppins-700.woff2" rel="preload" crossorigin>
   <link as="style" href="css/style.min.css" rel="preload">
   <link as="script" href="js/script.js" rel="preload">
+  <link as="script" href="js/vendor.js" rel="preload">
 
   <title>Jewellery for you</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -105,20 +106,43 @@
           <a href="catalog.html">Shop Now</a>
         </div>
 
-        <div class="slider__nav">
-          <span class="slider__arrow">
-            <svg width="29" height="9">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-left"></use>
-            </svg>
-          </span>
-          <span class="slider__arrow slider__arrow--right">
-            <svg width="29" height="9">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-left"></use>
-            </svg>
-          </span>
-        </div>
-
-        <div class="new-goods__list slider__list">
+        <div class="qwe">
+          <article class="new-goods__item">
+            <picture>
+              <source srcset="img/photo-shop-now-1@1x.webp 1x, img/photo-shop-now-1@2x.webp 2x" type="image/webp">
+              <!-- 1х: 510px; 2x: 1020px -->
+              <img alt="Necklace with amethyst" height="340" width="510" src="img/photo-shop-now-1@1x.jpg" srcset="img/photo-shop-now-1@2x.jpg 2x">
+            </picture>
+            <a href="good.html">Necklace with amethyst</a>
+            <span>$ 145</span>
+          </article>
+          <article class="new-goods__item">
+            <picture>
+              <source srcset="img/photo-shop-now-2@1x.webp 1x, img/photo-shop-now-2@2x.webp 2x" type="image/webp">
+              <!-- 1х: 324px; 2x: 648px -->
+              <img alt="Layered сhoker" height="485" width="324" src="img/photo-shop-now-2@1x.jpg" srcset="img/photo-shop-now-2@2x.jpg 2x">
+            </picture>
+            <a href="good.html">Layered сhoker</a>
+            <span>$ 115</span>
+          </article>
+          <article class="new-goods__item">
+            <picture>
+              <source srcset="img/photo-shop-now-3@1x.webp 1x, img/photo-shop-now-3@2x.webp 2x" type="image/webp">
+              <!-- 1х: 324px; 2x: 648px -->
+              <img alt="Gold chain" height="437" width="324" src="img/photo-shop-now-3@1x.jpg" srcset="img/photo-shop-now-3@2x.jpg 2x">
+            </picture>
+            <a href="good.html">Gold chain</a>
+            <span>$ 215</span>
+          </article>
+          <article class="new-goods__item">
+            <picture>
+              <source srcset="img/photo-shop-now-4@1x.webp 1x, img/photo-shop-now-4@2x.webp 2x" type="image/webp">
+              <!-- 1х: 510px; 2x: 1020px -->
+              <img alt="Galaxy earrings" height="340" width="510" src="img/photo-shop-now-4@1x.jpg" srcset="img/photo-shop-now-4@2x.jpg 2x">
+            </picture>
+            <a href="good.html">Galaxy earrings</a>
+            <span>$ 95</span>
+          </article>
           <article class="new-goods__item">
             <picture>
               <source srcset="img/photo-shop-now-1@1x.webp 1x, img/photo-shop-now-1@2x.webp 2x" type="image/webp">
@@ -156,15 +180,77 @@
             <span>$ 95</span>
           </article>
         </div>
-
-        <div class="slider__paginator">
-          <ul class="slider__paginator-list">
-            <li class="slider__paginator-item">1</li>
-            <li class="slider__paginator-item"><a href="#" class="slider__paginator-link">2</a></li>
-            <li class="slider__paginator-item"><a href="#" class="slider__paginator-link">3</a></li>
-          </ul>
-        </div>
       </div>
+    </div>
+  </div>
+
+  <div class="blog">
+    <div class="blog__wrapper">
+      <h2>Blog</h2>
+      <a href="catalog.html">Shop Now</a>
+
+      <div class="blog__list">
+        <article class="blog__item">
+          <picture>
+            <source srcset="img/photo-blog-1@1x.webp 1x, img/photo-blog-1@2x.webp 2x" type="image/webp">
+            <!-- 1х: 380px; 2x: 760px -->
+            <img alt="How to care for your jewellery" height="380" width="570" src="img/photo-blog-1@1x.jpg" srcset="img/photo-blog-1@2x.jpg 2x">
+          </picture>
+          <div class="blog__info">
+            <p>September 30, 2019</p>
+            <h3>How to care for your jewellery</h3>
+            <a href="#">Read Article</a>
+          </div>
+        </article>
+        <article class="blog__item">
+          <picture>
+            <source srcset="img/photo-blog-2@1x.webp 1x, img/photo-blog-2@2x.webp 2x" type="image/webp">
+            <!-- 1х: 380px; 2x: 760px -->
+            <img alt="How to care for your jewellery" height="380" width="570" src="img/photo-blog-2@1x.jpg" srcset="img/photo-blog-21@2x.jpg 2x">
+          </picture>
+          <div class="blog__info">
+            <p>September 23, 2019</p>
+            <h3>Power of crystals</h3>
+            <a href="#">Read Article</a>
+          </div>
+        </article>
+        <article class="blog__item">
+          <picture>
+            <source srcset="img/photo-blog-3@1x.webp 1x, img/photo-blog-3@2x.webp 2x" type="image/webp">
+            <!-- 1х: 380px; 2x: 760px -->
+            <img alt="How to care for your jewellery" height="380" width="570" src="img/photo-blog-3@1x.jpg" srcset="img/photo-blog-31@2x.jpg 2x">
+          </picture>
+          <div class="blog__info">
+            <p>September 16, 2019</p>
+            <h3>AW 19 trends</h3>
+            <a href="#">Read Article</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="faq__wrapper">
+      <h2>Frequently asked questions</h2>
+      <ul class="faq_list">
+        <li class="faq__item">
+          <h3>What materials are the jewellery made of?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item">
+          <h3>Which countries do you deliver to?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item">
+          <h3>What are the payment methods?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+        <li class="faq__item">
+          <h3>Can I return the jewellery if it didn’t fit me?</h3>
+          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+        </li>
+      </ul>
     </div>
   </div>
 </main>
@@ -246,6 +332,7 @@
   <div class="modal__form">
   </div>
 </div>
+<script src="js/vendor.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
