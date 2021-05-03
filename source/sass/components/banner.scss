@@ -7,7 +7,7 @@
   filter: drop-shadow(0 4px 4px $basic-black-transparency25);
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/main-banner@2x.png") $special-brown center center no-repeat;
+    background: url("../img/main-banner@2x.jpg") $special-brown center center no-repeat;
     background-size: cover;
   }
 }
@@ -28,10 +28,20 @@
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
-  line-height: 130%;
+  line-height: 110%;
   letter-spacing: 0.03em;
   color: $basic-white;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 7px 17px 0 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    font-size: 38px;
+    line-height: 100%;
+  }
 }
 
 .banner__wrapper span {
@@ -42,4 +52,13 @@
   line-height: 130%;
   color: $basic-white;
   margin: 0;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px 0 0;
+  }
+  @media (max-width: $tablet-width) {
+    padding: 0;
+    font-size: 34px;
+    line-height: 100%;
+  }
 }

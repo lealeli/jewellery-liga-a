@@ -1,12 +1,12 @@
 .footer-nav {
-  width: 30%;
+  width: 38%;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
   @media (max-width: $tablet-width) {
-    width: 80%;
+    width: 67.5%;
   }
 
   @media (max-width: $mobile-width) {
@@ -18,16 +18,28 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 50%;
+  width: 38%;
+  margin-left: 35px;
+
+  @media (max-width: $tablet-width) {
+    margin: 40px 0 0 0;
+    width: 44%;
+  }
 
   @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
 
+.footer-nav__list--sub {
+  @media (max-width: $mobile-width) {
+    margin: 11px 0 0 0;
+  }
+}
+
 .footer-nav__item {
-  margin-bottom: 30px;
   width: 100%;
+  margin: 5px 0 21px 0;
 }
 
 .footer-nav__link {

@@ -84,13 +84,13 @@
   padding: 22px 113px 0 0;
 
   @media (max-width: $tablet-width) {
-    padding: 21px 0 0 0;
+    padding: 21px 0 30px 0;
   }
 
   @media (max-width: $mobile-width) {
     width: 52px;
     height: 52px;
-    padding: 11px 0 0 0;
+    padding: 11px 0 20px 0;
   }
 }
 
@@ -133,15 +133,15 @@
     height: 18px;
     display: block;
     position: absolute;
-    top: 54px;
-    right: 45px;
+    top: 55px;
+    right: 43px;
     stroke: $special-gray-dark;
     fill: none;
   }
 
   @media (max-width: $mobile-width) {
-    top: 37px;
-    right: 15px;
+    top: 38px;
+    right: 13px;
   }
 
   &:hover {

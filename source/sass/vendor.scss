@@ -111,13 +111,21 @@ https://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: -71px;
   padding: 0;
   margin: 0;
   list-style: none;
   text-align: center;
   line-height: 1;
   counter-reset: a;
+
+  @media (max-width: $tablet-width) {
+    bottom: -62px;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .flickity-rtl .flickity-page-dots { direction: rtl; }

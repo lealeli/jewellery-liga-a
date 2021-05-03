@@ -1,3 +1,16 @@
+.slider {
+  max-width: 1170px;
+  margin: 0 30px;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 15px;
+  }
+}
+
 .slider__header {
   display: flex;
   width: 100%;
@@ -14,7 +27,11 @@
   line-height: 130%;
   color: $special-gray-dark;
   margin: 0;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 19px;
+  }
 }
 
 .slider__header a {
@@ -27,6 +44,15 @@
   text-decoration: none;
   border-bottom: 1px solid $special-brown;
   margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 4px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .slider__paginator {
