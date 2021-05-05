@@ -24,7 +24,7 @@
 }
 
 .faq_list {
-  margin: 48px 0 108px;
+  margin: 48px 0 100px;
   list-style: none;
   padding: 0;
   border: 1px $special-brown solid;
@@ -59,7 +59,7 @@
   display: block;
   width: 17px;
   height: 10px;
-  top: 43px;
+  top: 50px;
   right: 48px;
 
   @media (max-width: $tablet-width) {
@@ -78,7 +78,7 @@
 
 .faq__item--open a {
   transform: rotate(180deg);
-  top: 57px;
+  top: 50px;
 
   @media (max-width: $tablet-width) {
     top: 48px;

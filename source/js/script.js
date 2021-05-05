@@ -20,11 +20,13 @@
 
   var sldElem = document.querySelector('.new-goods__list');
   if (sldElem) {
+    sldElem.classList.remove('new-goods__list--nojs');
     var sldPagination = document.querySelector('.new-goods__pagination');
     var flkty = new Flickity(sldElem, {
       // options
       contain: true,
-      groupCells: true
+      groupCells: true,
+      arrowShape: 'M100,50.5H0 M0,50.5L18.9,66 M0,50.5L18.9,35'
     });
     var slideHandle = function () {
       var text = (flkty.selectedIndex + 1) + ' of ' + flkty.slides.length;

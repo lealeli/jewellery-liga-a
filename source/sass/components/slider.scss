@@ -45,6 +45,17 @@
   border-bottom: 1px solid $special-brown;
   margin-bottom: 60px;
 
+  &:hover {
+    border-bottom: 1px solid $special-brown-dark;
+    color: $special-brown-dark;
+  }
+
+  &:focus {
+    border-bottom: 1px solid $special-brown-dark;
+    color: $special-brown-dark;
+    opacity: 0.6;
+  }
+
   @media (max-width: $tablet-width) {
     padding-bottom: 4px;
     margin-bottom: 50px;

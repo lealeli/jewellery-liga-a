@@ -50,4 +50,12 @@
   line-height: 130%;
   color: $basic-white;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.4;
+  }
 }
