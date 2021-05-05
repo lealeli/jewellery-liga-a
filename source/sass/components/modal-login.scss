@@ -5,7 +5,7 @@
   height: 100%;
   position: fixed;
   justify-content: center;
-  z-index: 1000;
+  z-index: 2000;
 
   &--open {
     display: flex;
@@ -16,40 +16,76 @@
   position: fixed;
   top: 100px;
   margin: 0 auto;
-  width: 430px;
+  width: 343px;
   height: 568px;
   background: url("../img/log-in@1x.jpg") $special-brown-middle center top no-repeat;
   background-size: 100% auto;
   box-shadow: 0 5px 32px rgba(226, 221, 215, 0.24);
-  padding: 30px 39px 36px 39px;
+  padding: 0 44px 20px 44px;
   z-index: 900;
 
   @media (min-resolution: 2dppx) {
     background: url("../img/log-in@2x.jpg") $special-brown-middle center top no-repeat;
     background-size: 100% auto;
   }
+
+  @media (max-width: $tablet-width) {
+    width: 344px;
+    height: 568px;
+    padding: 0 49px 20px 49px;
+    top: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 243px;
+    height: 450px;
+    padding: 0 14px 20px 14px;
+    top: 50px;
+  }
 }
 
 .modal__close {
   width: 23px;
   height: 23px;
-  background: url("../img/icon-close.svg") center center no-repeat;
+  background: url("../img/icon-modal-close.svg") center center no-repeat;
   background-size: 14px 14px;
   position: absolute;
   top: 17px;
   right: 17px;
   display: block;
   cursor: pointer;
+
+  @media (max-width: $tablet-width) {
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 19px;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-size: 14px 14px;
+    width: 14px;
+    height: 14px;
+    top: 17px;
+    right: 17px;
+  }
 }
 
 .modal__form h2 {
   font-family: $font-family-header;
   font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 140.62%;
-  color: $basic-white;
-  margin: 198px 0 45px 0;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 130%;
+  color: $special-gray-dark;
+  margin: 188px 0 21px;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    font-size: 24px;
+    margin: 122px 0 18px;
+  }
 }
 
 .modal__form p {
@@ -72,77 +108,49 @@
 
 .modal__form input {
   border-radius: 0;
-  padding: 0 0 0 25px;
-  width: 386px;
-  height: 50px;
-  margin-bottom: 32px;
+  width: 340px;
+  height: 40px;
+  margin-bottom: 22px;
   color: $special-gray-dark;
   font-family: $font-family-text;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  background: $special-gray-light;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  background: $special-brown-middle;
   border: none;
+  border-bottom: 1px $special-gray-dark solid;
 
   &:hover {
-    background: $special-gray-light;
+    background: $special-brown-light;
   }
 
   &:focus {
-    background: $special-gray-light;
+    background: $special-brown-light;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 35px;
+    line-height: 35px;
+    width: 240px;
   }
 }
 
 .modal__form input::placeholder {
   font-family: $font-family-text;
   font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 50px;
-  color: $basic-white;
-}
-
-.modal__form textarea {
-  padding: 12px 0 0 24px;
-  width: 388px;
-  height: 92px;
-  color: $special-gray-dark;
-  font-family: $font-family-text;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  margin: 1px 0 24px 0;
-  border: none;
-  background: $special-gray-light;
-  resize: none;
-
-  &:hover {
-    background: $special-gray-light;
-  }
-
-  &:focus {
-    background: $special-gray-light;
-  }
-}
-
-.modal__form textarea::placeholder {
-  font-family: $font-family-text;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
-  color: $basic-white;
+  color: $special-gray-light;
 }
 
 .modal__form button {
   width: 100%;
-  height: 45px;
+  height: 68px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
   border: 1px $basic-white solid;
   box-sizing: border-box;
   font-family: $font-family-header;
@@ -153,61 +161,84 @@
   line-height: 16px;
   text-align: center;
   letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $basic-white;
   text-decoration: none;
-  margin: 0;
+  margin: 45px 0 0 0;
   padding: 0;
+  border-radius: 0;
+
 
   &:hover {
-    background-color: $special-gray-light;
-    border: none;
+    opacity: 0.6;
   }
 
   &:focus {
-    background-color: $special-gray-light;
-    border: none;
+    opacity: 0.4;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 36px 0 0;
+  }
+}
+
+.modal__link-forgot {
+  position: absolute;
+  right: 47px;
+  bottom: 204px;
+  text-align: end;
+
+  @media (max-width: $mobile-width) {
+    right: 17px;
+    bottom: 177px;
+  }
+}
+
+.modal__link-forgot a {
+  font-family: $font-family-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: $special-gray-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $special-gray-dark;
+    text-decoration: underline;
+  }
+
+  &:focus {
+    color: $special-gray-dark;
     opacity: 0.6;
   }
 }
 
-.modal__form-personal {
-  width: 379px;
-  padding: 32px 0 0;
-}
-
-.modal__form-personal input {
-  border-radius: 0;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
-.modal__form-personal label {
-  position: relative;
+.modal__link-signup {
   font-family: $font-family-text;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  color: $basic-white;
-  opacity: 0.8;
-  padding: 3px 0 0 48px;
-  display: block;
+  line-height: 21px;
+  color: $special-gray-light;
+  text-decoration: none;
+  margin: 15px 0;
+  text-align: center;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $basic-white;
-    box-sizing: border-box;
+.modal__link-signup a {
+  color: $special-gray-dark;
+  text-decoration: none;
+  padding-left: 8px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus {
+    opacity: 0.6;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 4px;
   }
 }
