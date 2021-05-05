@@ -28,12 +28,31 @@
     });
     var slideHandle = function () {
       var text = (flkty.selectedIndex + 1) + ' of ' + flkty.slides.length;
-      sldPagination.innerHTML = text;
+      if (sldPagination) {
+        sldPagination.innerHTML = text;
+      }
     };
     slideHandle();
     flkty.on('select', slideHandle);
   }
 
+  var gSldMain = document.querySelector('.good__slider-list-main');
+  if (gSldMain) {
+    var gSldMaiPagination = document.querySelector('.good__slider-list-main__pagination');
+    var gSldMainFlickity = new Flickity(gSldMain, {
+      'prevNextButtons': false,
+      'contain': true,
+      'pageDots': false
+    });
+    var gSldMainSelectHandle = function () {
+      var text = (gSldMainFlickity.selectedIndex + 1) + ' of ' + gSldMainFlickity.slides.length;
+      if (gSldMaiPagination) {
+        gSldMaiPagination.innerHTML = text;
+      }
+    };
+    gSldMainSelectHandle();
+    gSldMainFlickity.on('select', gSldMainSelectHandle);
+  }
 
   var toggleFaq = document.querySelectorAll('.faq__item');
   toggleFaq.forEach(function (el, idx) {
@@ -107,6 +126,52 @@
 
     el.classList.remove('filter__item--open');
   });
+
+  var modal = document.querySelector('.modal');
+  var modalClose = document.querySelector('.modal__close');
+  var form = modal.querySelector('form');
+  var emailInput = form.querySelector('[name=\'email\']');
+
+  if (modal && form) {
+    var closeModal = function () {
+      modal.classList.remove('modal--open');
+      document.body.style.overflowY = '';
+    };
+
+    window.addEventListener('keydown', function (e) {
+      if (e.keyCode === 27) {
+        closeModal();
+      }
+    });
+
+    document.querySelectorAll('.page-header__login, .main-nav__login').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        modal.classList.add('modal--open');
+        emailInput.focus();
+        document.body.style.overflowY = 'hidden';
+      });
+    });
+
+
+    modal.addEventListener('click', function (e) {
+      if (!e.target.closest('.modal__form')) {
+        closeModal();
+      }
+    });
+
+
+    modalClose.addEventListener('click', closeModal);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      localStorage.setItem('form-email', form.email.value);
+
+      form.reset();
+      closeModal();
+    });
+  }
 
 
 })();
