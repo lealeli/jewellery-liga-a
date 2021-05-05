@@ -1,19 +1,23 @@
 .new-goods {
   width: 100%;
+
+  &--good {
+    margin-bottom: 198px;
+
+    @media (max-width: $tablet-width) {
+      margin-bottom: 139px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-bottom: 63px;
+    }
+  }
 }
 
 .new-goods__wrapper {
   max-width: 1230px;
-  padding: 118px 0 0 0;
+  padding: 0;
   margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-    padding: 71px 0 0;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding: 60px 0 0;
-  }
 }
 
 .new-goods__list {

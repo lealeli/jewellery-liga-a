@@ -40,7 +40,7 @@
 
   var gSldMain = document.querySelector('.good__slider-list-main');
   if (gSldMain) {
-    var gSldMaiPagination = document.querySelector('.good__slider-list-main__pagination');
+    var gSldMaiPagination = document.querySelector('.good__slider-main-pagination');
     var gSldMainFlickity = new Flickity(gSldMain, {
       'prevNextButtons': false,
       'contain': true,

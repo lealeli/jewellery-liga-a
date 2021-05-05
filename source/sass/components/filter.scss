@@ -25,6 +25,7 @@
 .filter--open {
   @media (max-width: $tablet-width) {
     display: flex;
+    z-index: 1500;
   }
 }
 
@@ -218,6 +219,7 @@
   font-size: 16px;
   line-height: 130%;
   margin-top: 35px;
+  cursor: pointer;
 
   @media (max-width: $tablet-width) {
     width: 362px;
@@ -248,6 +250,7 @@
   background: $basic-white;
   color: $special-brown;
   margin-bottom: 40px;
+  cursor: pointer;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 32px;

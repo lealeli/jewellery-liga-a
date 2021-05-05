@@ -1,7 +1,7 @@
 .banner {
   max-width: 1366px;
   height: 463px;
-  margin: 0 auto;
+  margin: 0 auto 118px auto;
   background: url("../img/main-banner@1x.jpg") $special-brown center center no-repeat;
   background-size: cover;
   filter: drop-shadow(0 4px 4px $basic-black-transparency25);
@@ -13,6 +13,7 @@
 
   @media (max-width: $tablet-width) {
     background-size: 1200%;
+    margin: 0 auto 71px auto;
   }
 
   @media (max-width: $tablet-width) and (min-resolution: 2dppx) {
@@ -23,6 +24,7 @@
   @media (max-width: $mobile-width) {
     background: url(../img/main-banner@1x.jpg) #a87b62 47% 83% no-repeat;
     background-size: 230%;
+    margin: 0 auto 60px auto;
   }
 
   @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
