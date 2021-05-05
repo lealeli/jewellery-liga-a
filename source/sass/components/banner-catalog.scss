@@ -2,12 +2,30 @@
   max-width: 1366px;
   height: 261px;
   margin: 0 auto;
-  background: url("../img/catalog-banner@1x.jpg") $special-brown center center no-repeat;
+  background: url("../img/catalog-banner@1x.jpg") $special-brown center 43% no-repeat;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background: url("../img/catalog-banner@2x.jpg") $special-brown center center no-repeat;
+    background: url("../img/catalog-banner@2x.jpg") $special-brown center 43% no-repeat;
     background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/catalog-banner@1x.jpg") $special-brown center 25% no-repeat;
+  }
+
+  @media (max-width: $tablet-width) and (min-resolution: 2dppx) {
+    background: url("../img/catalog-banner@2x.jpg") $special-brown center 25% no-repeat;
+  }
+
+  @media (max-width: $mobile-width) {
+    background: url("../img/catalog-banner@1x.jpg") $special-brown 59% 50% no-repeat;
+    background-size: 184%;
+  }
+
+  @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
+    background: url("../img/catalog-banner@2x.jpg") $special-brown 59% 50% no-repeat;
+    background-size: 184%;
   }
 }
 

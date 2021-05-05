@@ -231,6 +231,14 @@
     margin-left: 20px;
     margin-top: 30px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.4;
+  }
 }
 
 .filter__button--reset button {
@@ -244,6 +252,14 @@
   @media (max-width: $mobile-width) {
     margin-bottom: 32px;
     margin-top: 19px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus {
+    opacity: 0.4;
   }
 }
 
