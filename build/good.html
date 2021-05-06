@@ -428,6 +428,50 @@
     <div class="modal__link-signup"><span>Don’t have an account?</span><a href="#">Sign up</a></div>
   </div>
 </div>
+<div class="modal-cart">
+  <div class="modal-cart__wrap">
+    <a class="modal-cart__close" href="#" tabindex="0"><span class="visually-hidden">Закрыть модальное окно</span></a>
+    <div class="modal-cart__goods">
+      <h1>The item was added to&nbsp;your cart</h1>
+      <div class="modal-cart__good">
+        <div class="modal-cart__good-info">
+          <picture>
+            <source srcset="img/photo-cart@1x.webp 1x, img/photo-cart@2x.webp 2x" type="image/webp">
+            <!-- 1х: 88px; 2x: 176px -->
+            <img alt="Gold chain" height="79" width="88" src="img/photo-cart@1x.jpg" srcset="img/photo-cart@2x.jpg 2x">
+          </picture>
+          <div class="modal-cart__good-header">
+            <h2>Gold Necklace </h2>
+            <span>$ 115</span>
+          </div>
+        </div>
+        <div class="modal-cart__good-quality">
+          <a href="#">
+            <svg width="14" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-plus"></use>
+            </svg>
+          </a>
+          <span>1</span>
+          <a href="#">
+            <svg width="14" height="2">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-minus"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cart__good-sum">
+      <p>You have 1 item in the cart</p>
+      <span>Cart subtotal: $ 115</span>
+    </div>
+
+    <div class="modal-cart__good-link">
+      <a href="catalog.html" class="modal-cart__good-link-shop">Continue shopping</a>
+      <a href="cart.html" class="modal-cart__good-link-cart">Checkout</a>
+    </div>
+  </div>
+</div>
 <script src="js/vendor.js"></script>
 <script src="js/script.js"></script>
 </body>

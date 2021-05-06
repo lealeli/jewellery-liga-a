@@ -176,4 +176,39 @@
   }
 
 
+  var modalCart = document.querySelector('.modal-cart');
+  var modalCartClose = document.querySelector('.modal-cart__close');
+  var modalCartWrap = modal.querySelector('form');
+
+  if (modalCart && modalCartWrap) {
+    var closeModalCart = function () {
+      modalCart.classList.remove('modal-cart--open');
+      document.body.style.overflowY = '';
+    };
+
+    window.addEventListener('keydown', function (e) {
+      if (e.keyCode === 27) {
+        closeModalCart();
+      }
+    });
+
+    document.querySelectorAll('.good__cart').forEach(function (el) {
+      el.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalCart.classList.add('modal-cart--open');
+        document.body.style.overflowY = 'hidden';
+      });
+    });
+
+    modalCart.addEventListener('click', function (e) {
+      if (!e.target.closest('.modal-cart__wrap')) {
+        closeModalCart();
+      }
+    });
+
+
+    modalCartClose.addEventListener('click', closeModalCart);
+  }
+
+
 })();
