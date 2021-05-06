@@ -1192,8 +1192,7 @@
     );
   }
 
-}( window, function factory( window, EvEmitter, getSize,
-                             utils, Cell, Slide, animatePrototype ) {
+}( window, function factory( window, EvEmitter, getSize, utils, Cell, Slide, animatePrototype ) {
 
   /* eslint-enable max-params */
 
