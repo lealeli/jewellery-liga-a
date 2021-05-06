@@ -22,6 +22,19 @@
   }
 }
 
+.filter--nojs {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    position: relative;
+    top: 0;
+    width: calc(100% - 90px);
+  }
+}
+
+.filter--nojs .filter_button-close {
+  display: none;
+}
+
 .filter--open {
   @media (max-width: $tablet-width) {
     display: flex;
@@ -327,7 +340,6 @@
   @media (max-width: $mobile-width) {
     top: 5px;
   }
-
 }
 
 .filter__circle--left {
@@ -412,6 +424,6 @@
   }
 
   &::before {
-  content: none;
+    content: none;
   }
 }

@@ -40,6 +40,7 @@
 
   var gSldMain = document.querySelector('.good__slider-list-main');
   if (gSldMain) {
+    gSldMain.classList.remove('good__slider-list-main--nojs');
     var gSldMaiPagination = document.querySelector('.good__slider-main-pagination');
     var gSldMainFlickity = new Flickity(gSldMain, {
       'prevNextButtons': false,
@@ -102,6 +103,9 @@
   var filter = document.querySelector('.filter');
   var filterButtonClose = document.querySelector('.filter_button-close');
   if (buttonFilter && filter && filterButtonClose) {
+
+    filter.classList.remove('filter--nojs');
+    buttonFilter.classList.remove('catalog__filter-button--nojs');
     buttonFilter.addEventListener('click', function (e) {
       e.preventDefault();
 

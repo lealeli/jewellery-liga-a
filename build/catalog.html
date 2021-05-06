@@ -22,7 +22,7 @@
 <body class="page-body">
 <header class="page-header">
   <div class="page-header__wrapper page-header__wrapper--nojs">
-    <a href="#" class="page-header__toggle page-header__toggle--nojs" type="button">
+    <a href="#" class="page-header__toggle page-header__toggle--nojs">
       <svg width="25" height="18">
         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-menu"></use>
       </svg>
@@ -42,7 +42,7 @@
       <img alt="Chjewellery" src="img/logo.svg" width="66" height="66">
     </a>
     <div class="page-header__nav">
-      <a href="#" class="page-header__login">Login</a>
+      <a href="login.html" class="page-header__login">Login</a>
       <a href="#" class="page-header__cart">
         <svg width="18" height="16">
           <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-cart"></use>
@@ -63,7 +63,7 @@
         </svg>
       </a>
       <div class="main-nav__search">
-        <form action="">
+        <form action="#">
           <input id="search-menu" type="search">
           <label for="search-menu">
             <svg width="14" height="14">
@@ -84,7 +84,7 @@
         <li class="main-nav__subitem"><a class="main-nav__sublink" href="#" tabindex="0">Stores & Hours</a></li>
         <li class="main-nav__subitem"><a class="main-nav__sublink" href="#" tabindex="0">Contact Us</a></li>
       </ul>
-      <a href="#" class="main-nav__login">Login</a>
+      <a href="login.html" class="main-nav__login">Login</a>
     </div>
   </nav>
 </header>
@@ -99,15 +99,15 @@
 
   <div class="catalog">
     <div class="catalog__wrapper">
-      <a href="#" class="catalog__filter-button">Filter</a>
-      <div class="filter">
+      <a href="#" class="catalog__filter-button catalog__filter-button--nojs">Filter</a>
+      <div class="filter filter--nojs">
         <a href="#" class="filter_button-close">
           <svg width="14" height="14">
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-close"></use>
           </svg>
         </a>
-        <form action="">
-          <div class="filter__item filter__product">
+        <form action="#">
+          <div class="filter__item filter__item--open filter__product">
             <span>Product</span>
             <a href="#">
               <svg width="17" height="10">
@@ -126,7 +126,7 @@
             </div>
           </div>
 
-          <div class="filter__item filter__material">
+          <div class="filter__item filter__item--open filter__material">
             <span>Material</span>
             <a href="#">
               <svg width="17" height="10">
@@ -140,7 +140,7 @@
               <label for="silver">Silver</label>
             </div>
           </div>
-          <div class="filter__item filter__collection">
+          <div class="filter__item filter__item--open filter__collection">
             <span>Collection</span>
             <a href="#">
               <svg width="17" height="10">
@@ -155,7 +155,7 @@
             </div>
           </div>
 
-          <div class="filter__item filter__price">
+          <div class="filter__item filter__item--open filter__price">
             <span>Price</span>
             <a href="#">
               <svg width="17" height="10">
@@ -324,7 +324,7 @@
       <h2 class="page-footer__header">The good stuff in&nbsp;your inbox </h2>
       <p class="page-footer__text">News and updates from CH. No&nbsp;spam, we promise.</p>
       <div class="page-footer__input-mail">
-        <form action="">
+        <form action="#">
           <label>
             <input type="text" placeholder="Your E-mail">
           </label>
