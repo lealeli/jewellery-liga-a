@@ -23,6 +23,9 @@
   &--open {
     @media (max-width: $tablet-width) {
       display: block;
+      position: fixed;
+      height: 100%;
+      overflow: scroll;
     }
   }
 
