@@ -39,8 +39,12 @@
   }
 
   var gSldMain = document.querySelector('.good__slider-list-main');
+  var gSldNav = document.querySelector('.good__slider-list-nav');
   if (gSldMain) {
     gSldMain.classList.remove('good__slider-list-main--nojs');
+    if (gSldNav) {
+      gSldNav.classList.remove('good__slider-list-nav--nojs');
+    }
     var gSldMaiPagination = document.querySelector('.good__slider-main-pagination');
     var gSldMainFlickity = new Flickity(gSldMain, {
       'prevNextButtons': false,
