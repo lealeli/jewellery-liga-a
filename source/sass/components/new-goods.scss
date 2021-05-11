@@ -30,6 +30,8 @@
   &--nojs {
     display: flex;
     flex-wrap: wrap;
+    max-height: 349px;
+    overflow: hidden;
   }
 
   &--nojs .new-goods__item {
