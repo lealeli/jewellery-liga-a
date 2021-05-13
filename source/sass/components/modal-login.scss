@@ -67,16 +67,16 @@
     background-size: 20px 20px;
     width: 20px;
     height: 20px;
-    top: 20px;
-    right: 19px;
+    top: -233px;
+    right: -30px;
   }
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width) {
     background-size: 14px 14px;
     width: 14px;
     height: 14px;
-    top: 17px;
-    right: 17px;
+    top: -157px;
+    right: 4px;
   }
 }
 
