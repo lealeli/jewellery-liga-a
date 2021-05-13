@@ -125,16 +125,16 @@
     filter.classList.remove('filter--open');
   }
 
-  var toggleFilter = document.querySelectorAll('.filter__item');
+  var toggleFilter = document.querySelectorAll('.filter__item-header');
 
   toggleFilter.forEach(function (el) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
 
-      el.classList.toggle('filter__item--open');
+      el.parentElement.classList.toggle('filter__item--open');
     });
 
-    el.classList.remove('filter__item--open');
+    el.parentElement.classList.remove('filter__item--open');
   });
 
   var modal = document.querySelector('.modal');

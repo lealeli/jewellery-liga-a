@@ -68,7 +68,6 @@
 .filter__item {
   border: 1px $special-brown solid;
   border-bottom: none;
-  padding: 21px 0 20px 25px;
   box-sizing: border-box;
   position: relative;
   cursor: pointer;
@@ -76,11 +75,24 @@
   @media (max-width: $tablet-width) {
     border: none;
     border-bottom: 1px $special-brown solid;
-    padding: 36px 0 26px 22px;
+    padding: 0;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 24px 0 21px 22px;
+    padding: 0;
+  }
+}
+
+.filter__item-header {
+  height: 100%;
+  padding: 21px 0 22px 25px;
+
+  @media (max-width: $tablet-width) {
+    padding: 36px 0 31px 22px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 24px 0 25px 22px;
   }
 }
 
@@ -139,20 +151,29 @@
 }
 
 .filter__price .filter__item-wrap {
-  margin: 12px 0 0 0;
+  margin: -11px 0 0 -9px;
 
   @media (max-width: $tablet-width) {
-    margin: 18px 0 0;
+    margin: -16px 0 0 -8px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 22px;
   }
 }
 
 .filter__item-wrap {
   display: none;
   flex-direction: column;
-  margin: 22px 0 0 10px;
+  padding: 0 0 19px 34px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 0 21px 31px;
+    margin: -9px 0 0;
+  }
 
   @media (max-width: $mobile-width) {
-    margin: 25px 0 0 9px;
+    padding: 6px 0 10px 31px;
   }
 }
 
@@ -160,8 +181,19 @@
   display: flex;
 }
 
-.filter__item-wrap input {
-  display: none;
+.filter__item-wrap input[type="checkbox"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.filter__item-wrap input[type="checkbox"]:focus + label {
+  opacity: 0.6;
 }
 
 .filter__item-wrap label {
@@ -175,6 +207,10 @@
   position: relative;
   margin-bottom: 12px;
   cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   &::before {
     position: absolute;
@@ -201,11 +237,11 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 
-.filter__item-wrap input:checked + label {
+.filter__item-wrap input[type="checkbox"]:checked + label {
   &::before {
     content: "";
     background: $special-brown;
