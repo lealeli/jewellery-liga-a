@@ -31,7 +31,7 @@
   }
 }
 
-.filter--nojs .filter_button-close {
+.filter--nojs .filter__button-close {
   display: none;
 }
 
@@ -42,7 +42,7 @@
   }
 }
 
-.filter_button-close {
+.filter__button-close {
   display: none;
 
   @media (max-width: $tablet-width) {

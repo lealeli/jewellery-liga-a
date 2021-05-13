@@ -105,7 +105,7 @@
 
   var buttonFilter = document.querySelector('.catalog__filter-button');
   var filter = document.querySelector('.filter');
-  var filterButtonClose = document.querySelector('.filter_button-close');
+  var filterButtonClose = document.querySelector('.filter__button-close');
   if (buttonFilter && filter && filterButtonClose) {
 
     filter.classList.remove('filter--nojs');
