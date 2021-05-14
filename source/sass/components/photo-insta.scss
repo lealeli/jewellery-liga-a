@@ -82,7 +82,7 @@
   display: grid;
   grid-row-gap: 34px;
   grid-column-gap: 27px;
-  grid-template-columns: 230px 399px 230px 230px;
+  grid-template-columns: 18.5% 32.5% 18.5% 18.5%;
   grid-template-rows: 230px 150px;
   grid-auto-flow: column;
   width: 100%;
@@ -94,7 +94,7 @@
   @media (max-width: $tablet-width) {
     grid-row-gap: 20px;
     grid-column-gap: 16px;
-    grid-template-columns: 133px 231px 133px 133px;
+    grid-template-columns: 17.3% 30% 17.3% 17.3%;
     grid-template-rows: 133px 87px;
     grid-auto-flow: column;
     margin: 0 45px;

@@ -30,16 +30,16 @@
   border: 1px $special-brown solid;
 
   @media (max-width: $tablet-width) {
-    margin: 49px 45px 66px 45px;
+    margin: 49px 45px 62px 45px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 28px 15px 53px 15px;
+    margin: 28px 15px 51px 15px;
   }
 }
 
 .faq__item {
-  padding: 43px 0 44px 43px;
+  padding: 42px 0 43px 43px;
   border-bottom: 1px $special-brown solid;
   cursor: pointer;
   position: relative;

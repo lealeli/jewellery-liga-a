@@ -50,54 +50,51 @@
 
 .catalog__list {
   display: grid;
-  grid-template-columns: 270px 270px 270px;
+  grid-template-columns: 31% 31% 31%;
   grid-template-rows: auto auto auto auto;
   grid-row-gap: 37px;
   grid-column-gap: 30px;
   margin-left: 50px;
+  width: 75%;
 
   @media (max-width: $tablet-width) {
-    grid-template-columns: 206px 206px 206px;
+    grid-template-columns: 30.5% 30.5% 30.5%;
     margin: 0 auto;
+    width: 100%;
+    grid-column-gap: 4.25%;
   }
 
   @media (max-width: $mobile-width) {
-    grid-template-columns: 130px 130px;
+    grid-template-columns: 44.5% 44.5%;
     grid-template-rows: auto auto auto auto auto auto;
     grid-row-gap: 26px;
+    grid-column-gap: 11%;
   }
 }
 
 .catalog__item {
-  width: 270px;
+  width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
-  @media (max-width: $tablet-width) {
-    width: 206px;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 130px;
-  }
+  align-self: flex-start;
 }
 
 .catalog__item img,
 .catalog__item picture {
-  width: 270px;
+  width: 100%;
   height: 272px;
   object-fit: cover;
 
   @media (max-width: $tablet-width) {
-    width: 206px;
-    height: 208px;
+    min-height: 208px;
+    height: auto;
   }
 
   @media (max-width: $mobile-width) {
-    width: 130px;
-    height: 136px;
+    min-height: 136px;
+    height: auto;
   }
 }
 
@@ -113,7 +110,7 @@
   text-decoration: none;
 
   @media (max-width: $mobile-width) {
-    margin: 18px 0 0;
+    margin: 12px 0 0;
   }
 
   &:hover {
