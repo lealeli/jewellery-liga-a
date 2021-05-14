@@ -114,6 +114,7 @@
       e.preventDefault();
 
       filter.classList.toggle('filter--open');
+      document.body.style.overflowY = 'hidden';
     });
 
     filterButtonClose.addEventListener('click', function (e) {
