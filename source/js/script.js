@@ -7,10 +7,16 @@
   var menu = document.querySelector('.page-header__wrapper');
   var subMenu = document.querySelector('.main-nav');
 
+  var hiddenFlag = false;
   function clickMenu() {
     button.classList.toggle('page-header__toggle--open');
     subMenu.classList.toggle('main-nav--open');
-    document.body.style.overflowY = 'hidden';
+    if (hiddenFlag) {
+      document.body.style.overflowY = '';
+    } else {
+      document.body.style.overflowY = 'hidden';
+    }
+    hiddenFlag = !hiddenFlag;
   }
 
   if (button && subMenu && menu && buttonOpen) {
