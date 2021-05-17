@@ -167,10 +167,10 @@
 
 .main-nav__list {
   list-style: none;
-  margin: 0 -8px;
+  margin: 0 -18px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 3px 0 18px 8px;
 
@@ -185,7 +185,7 @@
 }
 
 .main-nav__item {
-  margin: 0 8px;
+  margin: 0 18px 0 17px;
 
   @media (max-width: $tablet-width) {
     width: 100%;
