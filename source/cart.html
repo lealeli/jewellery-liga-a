@@ -39,7 +39,7 @@
         </label>
       </form>
     </div>
-    <a class="page-header__logo">
+    <a href="index.html" class="page-header__logo">
       <img alt="Chjewellery" src="img/logo.svg" width="66" height="66">
     </a>
     <div class="page-header__nav">
@@ -97,14 +97,116 @@
 </header>
 
 <main class="page-main">
-  <div class="banner">
-    <div class="banner__wrapper">
-      <h1>PERFECTION</h1>
-      <span>made to be yours</span>
+
+  <div class="good">
+    <div class="good__wrapper">
+
+      <div class="good__slider-wrap">
+        <div class="good__slider">
+          <div class="good__slider-nav">
+            <div class="good__slider-list-nav good__slider-list-nav--nojs" data-flickity='{
+                "asNavFor": ".good__slider-list-main",
+                "draggable": false,
+                "contain": true,
+                "prevNextButtons": false,
+                "pageDots": false
+              }'>
+              <div class="good__slider-item good__slider-item-nav">
+                <picture>
+                <source srcset="img/photo-good-2@1x.webp 1x, img/photo-good-2@2x.webp 2x" type="image/webp">
+                <!-- 1х: 470px; 2x: 940px -->
+                <img alt="Gold Necklace" height="699" width="470" src="img/photo-good-2@1x.jpg" srcset="img/photo-good-2@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="good__slider-item good__slider-item-nav">
+                <picture>
+                  <source srcset="img/photo-good-3@1x.webp 1x, img/photo-good-3@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 470px; 2x: 940px -->
+                  <img alt="Gold Necklace" height="699" width="470" src="img/photo-good-3@1x.jpg" srcset="img/photo-good-3@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="good__slider-item good__slider-item-nav">
+                <picture>
+                  <source srcset="img/photo-good-4@1x.webp 1x, img/photo-good-4@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 470px; 2x: 940px -->
+                  <img alt="Gold Necklace" height="435" width="431" src="img/photo-good-4@1x.jpg" srcset="img/photo-good-4@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+          </div>
+          <div class="good__slider-main">
+            <div class="good__slider-list-main good__slider-list-main--nojs">
+              <div class="good__slider-item good__slider-item-main">
+                <picture>
+                <source srcset="img/photo-good-2@1x.webp 1x, img/photo-good-2@2x.webp 2x" type="image/webp">
+                <!-- 1х: 470px; 2x: 940px -->
+                <img alt="Gold Necklace" height="699" width="470" src="img/photo-good-2@1x.jpg" srcset="img/photo-good-2@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="good__slider-item good__slider-item-main">
+                <picture>
+                  <source srcset="img/photo-good-3@1x.webp 1x, img/photo-good-3@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 470px; 2x: 940px -->
+                  <img alt="Gold Necklace" height="699" width="470" src="img/photo-good-3@1x.jpg" srcset="img/photo-good-3@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="good__slider-item good__slider-item-main">
+                <picture>
+                  <source srcset="img/photo-good-4@1x.webp 1x, img/photo-good-4@2x.webp 2x" type="image/webp">
+                  <!-- 1х: 470px; 2x: 940px -->
+                  <img alt="Gold Necklace" height="435" width="431" src="img/photo-good-4@1x.jpg" srcset="img/photo-good-4@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+
+            <div class="good__slider-main-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="good__info">
+        <h1>Gold Necklace</h1>
+        <span>$ 115</span>
+
+        <div class="good__tabs">
+          <div class="good__tab-header">
+            <a class="good__tab-header-link" data-tab="description" href="#">Description</a>
+            <a class="good__tab-header-link" data-tab="info" href="#">Additional info</a>
+          </div>
+          <article id="description" class="good__tab">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </article>
+          <article id="info" class="good__tab">
+            <dl>
+              <div class="good__tab-info">
+                <dt>Metal type</dt>
+                <dd>Gold 585</dd>
+              </div>
+              <div class="good__tab-info">
+                <dt>Stone</dt>
+                <dd>Turquoise</dd>
+              </div>
+              <div class="good__tab-info">
+                <dt>Size</dt>
+                <dd>18” / 20”</dd>
+              </div>
+            </dl>
+          </article>
+
+        </div>
+
+        <a class="good__cart" href="cart.html">Add to cart</a>
+
+        <ul class="good__warranty">
+          <li class="good__warranty-item">14 Day Returns</li>
+          <li class="good__warranty-item">2-Year Warranty</li>
+          <li class="good__warranty-item">Free Shipping</li>
+        </ul>
+      </div>
     </div>
   </div>
 
-  <div class="new-goods">
+  <div class="new-goods new-goods--good">
     <div class="new-goods__wrapper">
       <div class="slider">
         <div class="slider__header">
@@ -250,174 +352,6 @@
       </div>
     </div>
   </div>
-
-  <div class="blog">
-    <div class="blog__wrapper">
-      <h2>Blog</h2>
-      <a href="catalog.html">Read All</a>
-
-      <div class="blog__list">
-        <article class="blog__item">
-          <div class="blog__picture">
-            <picture>
-              <source srcset="img/photo-blog-1@1x.webp 1x, img/photo-blog-1@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="380" width="570" src="img/photo-blog-1@1x.jpg" srcset="img/photo-blog-1@2x.jpg 2x">
-            </picture>
-          </div>
-          <div class="blog__info">
-            <p>September 30, 2019</p>
-            <h3>How to care for your jewellery</h3>
-            <a href="#">Read Article</a>
-          </div>
-        </article>
-        <article class="blog__item">
-          <div class="blog__picture">
-            <picture>
-              <source srcset="img/photo-blog-2@1x.webp 1x, img/photo-blog-2@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="859" width="570" src="img/photo-blog-2@1x.jpg" srcset="img/photo-blog-2@2x.jpg 2x">
-            </picture>
-          </div>
-          <div class="blog__info">
-            <p>September 23, 2019</p>
-            <h3>Power of crystals</h3>
-            <a href="#">Read Article</a>
-          </div>
-        </article>
-        <article class="blog__item">
-          <div class="blog__picture">
-            <picture>
-              <source srcset="img/photo-blog-3@1x.webp 1x, img/photo-blog-3@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="742" width="570" src="img/photo-blog-3@1x.jpg" srcset="img/photo-blog-3@2x.jpg 2x">
-            </picture>
-          </div>
-          <div class="blog__info">
-            <p>September 16, 2019</p>
-            <h3>AW 19 trends</h3>
-            <a href="#">Read Article</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </div>
-
-  <div class="faq">
-    <div class="faq__wrapper">
-      <h2>Frequently asked questions</h2>
-      <ul class="faq__list">
-        <li class="faq__item faq__item--open">
-          <h3>What materials are the&nbsp;jewellery made of?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a href="#">
-            <svg width="17" height="10">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-bottom"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="faq__item faq__item--open">
-          <h3>Which countries do&nbsp;you&nbsp;deliver to?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a href="#">
-            <svg width="17" height="10">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-bottom"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="faq__item faq__item--open">
-          <h3>What are the payment&nbsp;methods?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a href="#">
-            <svg width="17" height="10">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-bottom"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="faq__item faq__item--open">
-          <h3>Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t&nbsp;fit&nbsp;me?</h3>
-          <p>Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
-          <a href="#">
-            <svg width="17" height="10">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-arrow-bottom"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="photo-insta">
-    <div class="photo-insta__wrapper">
-      <h2><span>@</span>Chjewellery</h2>
-      <a href="#">Follow Us</a>
-      <ul class="photo-insta__list">
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-1@1x.webp 1x, img/photo-insta-1@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="380" width="570" src="img/photo-insta-1@1x.jpg" srcset="img/photo-insta-1@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-2@1x.webp 1x, img/photo-insta-2@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="340" width="399" src="img/photo-insta-2@1x.jpg" srcset="img/photo-insta-2@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-3@1x.webp 1x, img/photo-insta-3@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="676" width="399" src="img/photo-insta-3@1x.jpg" srcset="img/photo-insta-3@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-4@1x.webp 1x, img/photo-insta-4@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="312" width="399" src="img/photo-insta-4@1x.jpg" srcset="img/photo-insta-4@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-5@1x.webp 1x, img/photo-insta-5@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="599" width="399" src="img/photo-insta-5@1x.jpg" srcset="img/photo-insta-5@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-6@1x.webp 1x, img/photo-insta-6@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="534" width="399" src="img/photo-insta-6@1x.jpg" srcset="img/photo-insta-6@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-        <li class="photo-insta__item">
-          <a href="#">
-            <picture>
-              <source srcset="img/photo-insta-7@1x.webp 1x, img/photo-insta-7@2x.webp 2x" type="image/webp">
-              <!-- 1х: 380px; 2x: 760px -->
-              <img alt="How to care for your jewellery" height="270" width="399" src="img/photo-insta-7@1x.jpg" srcset="img/photo-insta-7@2x.jpg 2x">
-            </picture>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 </main>
 
 <footer class="page-footer">
@@ -482,6 +416,7 @@
       </a>
     </div>
   </div>
+  </div>
 </footer>
 <div class="modal">
   <div class="modal__form">
@@ -501,6 +436,49 @@
     </form>
 
     <div class="modal__link-signup"><span>Don’t have an account?</span><a href="#">Sign up</a></div>
+  </div>
+</div>
+<div class="modal-cart modal-cart--open">
+  <div class="modal-cart__wrap">
+    <div class="modal-cart__goods">
+      <h1>The item was added to&nbsp;your cart</h1>
+      <div class="modal-cart__good">
+        <div class="modal-cart__good-info">
+          <picture>
+            <source srcset="img/photo-cart@1x.webp 1x, img/photo-cart@2x.webp 2x" type="image/webp">
+            <!-- 1х: 88px; 2x: 176px -->
+            <img alt="Gold chain" height="79" width="88" src="img/photo-cart@1x.jpg" srcset="img/photo-cart@2x.jpg 2x">
+          </picture>
+          <div class="modal-cart__good-header">
+            <h2>Gold Necklace </h2>
+            <span>$ 115</span>
+          </div>
+        </div>
+        <div class="modal-cart__good-quality">
+          <a href="#">
+            <svg width="14" height="14">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-plus"></use>
+            </svg>
+          </a>
+          <span>1</span>
+          <a href="#">
+            <svg width="14" height="2">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-auto.svg#icon-minus"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-cart__good-sum">
+      <p>You have 1 item in the cart</p>
+      <span>Cart subtotal: $ 115</span>
+    </div>
+
+    <div class="modal-cart__good-link">
+      <a href="catalog.html" class="modal-cart__good-link-shop">Continue shopping</a>
+      <a href="cart.html" class="modal-cart__good-link-cart">Checkout</a>
+    </div>
   </div>
 </div>
 <script src="js/vendor.js"></script>
