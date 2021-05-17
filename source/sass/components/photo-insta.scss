@@ -8,8 +8,9 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  position: initial;
 
   @media (max-width: $tablet-width) {
     padding: 0 0 79px;
@@ -86,7 +87,7 @@
   grid-template-rows: 230px 150px;
   grid-auto-flow: column;
   width: 100%;
-  align-content: center;
+  align-content: start;
   justify-content: center;
   padding: 0;
   margin: 0 30px;
