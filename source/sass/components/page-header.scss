@@ -48,32 +48,11 @@
     fill: none;
     stroke: $special-gray-dark;
     background-color: $basic-white;
-    z-index: 1100;
   }
 
   @media (max-width: $mobile-width) {
     top: 37px;
     left: 15px;
-  }
-
-  &--open {
-    background-color: $special-brown;
-  }
-
-  &--open svg {
-    display: none;
-
-    @media (max-width: $tablet-width) {
-      stroke: $basic-white;
-      position: absolute;
-      display: block;
-      width: 25px;
-      height: 18px;
-      fill: none;
-      top: 0;
-      left: 0;
-      z-index: 100;
-    }
   }
 
   &--nojs {

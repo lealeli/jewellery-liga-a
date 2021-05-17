@@ -55,6 +55,46 @@
   }
 }
 
+.main-nav__toggle {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    stroke: $basic-white;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 18px;
+    fill: none;
+    top: 0;
+    left: 0;
+    border: none;
+    background-color: $special-brown;
+    z-index: 3000;
+  }
+
+  @media (max-width: $mobile-width) {
+    top: 37px;
+    left: 15px;
+  }
+
+  &--nojs {
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+}
+
+.main-nav__toggle svg {
+  @media (max-width: $tablet-width) {
+    fill: none;
+    stroke: $basic-white;
+    stroke-width: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
 .main-nav__logo {
   display: none;
 

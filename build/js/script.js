@@ -3,19 +3,23 @@
 /* global Flickity */
 (function () {
   var button = document.querySelector('.page-header__toggle');
+  var buttonOpen = document.querySelector('.main-nav__toggle');
   var menu = document.querySelector('.page-header__wrapper');
   var subMenu = document.querySelector('.main-nav');
 
   function clickMenu() {
     button.classList.toggle('page-header__toggle--open');
     subMenu.classList.toggle('main-nav--open');
+    document.body.style.overflowY = 'hidden';
   }
 
-  if (button && subMenu && menu) {
+  if (button && subMenu && menu && buttonOpen) {
+    buttonOpen.classList.remove('main-nav__toggle--nojs');
     button.classList.remove('page-header__toggle--nojs');
     subMenu.classList.remove('main-nav--nojs');
     menu.classList.remove('page-header__wrapper--nojs');
     button.addEventListener('click', clickMenu);
+    buttonOpen.addEventListener('click', clickMenu);
   }
 
   var sldElem = document.querySelector('.new-goods__list');
