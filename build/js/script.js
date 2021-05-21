@@ -131,6 +131,7 @@
       e.preventDefault();
 
       filter.classList.toggle('filter--open');
+      document.body.style.overflowY = '';
     });
 
     filter.classList.remove('filter--open');
