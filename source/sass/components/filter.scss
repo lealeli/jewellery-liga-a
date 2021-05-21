@@ -30,14 +30,16 @@
     z-index: 900;
     box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
     width: 423px;
-    height: 610px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 76px 0 76px 25px;
     width: 270px;
-    height: 510px;
   }
+}
+
+.filter__wrap form {
+  background: $basic-white;
 }
 
 .filter--nojs {
@@ -46,6 +48,10 @@
     position: relative;
     top: 0;
     width: calc(100% - 90px);
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
   }
 }
 
